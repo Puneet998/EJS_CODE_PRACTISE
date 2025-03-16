@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditinal_statement</title>
+    <style>
+    .puneet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: rgb(119, 59, 249);
+        color: red;
+        font-size: 30px;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <!-- ejs ka full form embeded javascript -->
+     <!-- <h1>condition</h1> -->
+      <div class="puneet">
+        <% const age=Math.floor(Math.random()*20)+5 %>
+        <h1>your age is=<%=age%></h1>
+        <% if(age>10&&age<18){ %>
+            <h1> aap dheere dheere voting ki taraf badh rahe hai <%=18-age %> saal baki hai </h1>
+        <% }else if(age<6){ %>
+            <h1>abhi aap bachpan main hai <%= age%></h1>   
+        <% }else if(age>5&&age<10) { %>
+            <h1>aap khel kood sakte hai</h1>
+        <% }else{ %>
+            <h1>you are eligible for voting</h1>
+        <% } %>
+
+        </div>
+        <!-- <h1>condition</h1> -->
+        
+</body>
+</html>
